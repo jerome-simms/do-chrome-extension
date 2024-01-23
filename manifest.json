@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "do",
+  "description": "do is a todo list extension that shows up in the side panel on chrome",
+  "version": "0.1.0",
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "service_worker": "background-scripts/service-worker.js"
+  },
+  "action": {
+    "deafult_icon": {
+      "32": "images/icon32.png" 
+    },
+    "default_title": "do show tasks"
+  },
+  "permissions": ["sidePanel", "contextMenus", "storage"],
+  "side_panel": {
+    "default_path": "views/side-panel.html"
+  }
+}

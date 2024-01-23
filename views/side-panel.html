@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link in the stylesheet -->
+    <!-- get the script tag -->
+    <title>do side panel</title>
+</head>
+<body>
+    <div>
+        <!-- Here is where all of the todo items will go -->
+        <p>This is the side panel being opened from the extension</p>
+
+        <div class="todo-container">
+            <!-- here is where we will add a checkbox along with the item to the list, below is an example of the format -->
+            <input type="checkbox"> <span>This is an item</span>
+        </div>
+
+        <!-- the input to get the user's next input -->
+        <form id="todo-form">
+            <input type="text" name="item" id="item" placeholder="Enter item">
+            <button type="submit">Add</button>
+        </form>
+    </div>
+    
+    <script>
+        /* Chrome is not allowing this script to execute inside the browser, figure out what to do at a later point
+        
+        // get the relevant elements
+        // const todoContainer = document.querySelector('.todo-container');
+        // const itemInput = document.getElementById('item');
+        // const todoForm = document.getElementById('todo-form');
+
+        // todoForm.addEventListener('submit', () => {
+        //     if (itemInput) {
+        //         const html = `<input type="checkbox"> <span>${itemInput.value}</span>`;
+        //         todoContainer.insertAdjacentHTML('beforeend', html);
+        //     }
+        // });
+        */
+        
+
+    </script>
+</body>
+</html>
